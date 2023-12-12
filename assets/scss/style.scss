@@ -493,8 +493,46 @@ body {
         }
     }
     .review-card {
+        border-radius: 11px;
+        border: 1px solid transparent;
+        transition: all 0.2s linear;
+        padding-bottom: 20px;
+        .review-img{
+            img{
+                width: 100%;
+            }
+        }
+        .social-icon {
+            .instagram, .dribble, .linked-in {
+                @media(max-width:575px){
+                    max-width: 20px;
+                    width: 100%;
+                }
+                
+            }
+        }
+        @media(max-width:991px){
+            padding-bottom: 0px;
+            margin-bottom: 10px;
+
+        }
+        &:hover {
+           border: 1px solid orange;
+
+        }
         @media(max-width: 991px){
             padding-bottom:40px;
+        }
+        @media(max-width: 575px){
+            padding-bottom:20px;
+            h5 {
+                padding-top: 10px !important;
+                margin-bottom: 0px !important;
+                font-size: 16px !important;
+            }
+            p {
+                margin-bottom: 10px !important;
+            }
         }
     }
     .resume-btn{
@@ -515,6 +553,7 @@ body {
     }
 
 }
+
 
 //Package
 .package {

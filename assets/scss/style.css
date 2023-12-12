@@ -580,9 +580,46 @@ body {
     padding-bottom: 30px;
   }
 }
+.review .review-card {
+  border-radius: 11px;
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+  padding-bottom: 20px;
+}
+.review .review-card .review-img img {
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .review .review-card .social-icon .instagram, .review .review-card .social-icon .dribble, .review .review-card .social-icon .linked-in {
+    max-width: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .review .review-card {
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+}
+.review .review-card:hover {
+  border: 1px solid orange;
+}
 @media (max-width: 991px) {
   .review .review-card {
     padding-bottom: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .review .review-card {
+    padding-bottom: 20px;
+  }
+  .review .review-card h5 {
+    padding-top: 10px !important;
+    margin-bottom: 0px !important;
+    font-size: 16px !important;
+  }
+  .review .review-card p {
+    margin-bottom: 10px !important;
   }
 }
 .review .resume-btn {
