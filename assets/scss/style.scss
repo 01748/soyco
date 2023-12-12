@@ -138,6 +138,10 @@ body {
     }
 }
 .fs-5 {
+    @media (max-width:767px) {
+        font-size: 17px !important;
+        line-height: 27px !important;
+    }
     @media (max-width:575px) {
         font-size: 16px !important;
         line-height: 26px !important;
@@ -219,15 +223,24 @@ body {
 .shadow-right {
     box-shadow: 100px 0px 70px -40px rgba(0, 0, 0, 0.08);
     position: relative;
+    @media(max-width:767px){
+        box-shadow: none;
+    }
 }
 .radius-10 {
     border-radius: 10px;
 }
 .radius-left-12 {
     border-radius: 12px 0px 0px 12px;
+    @media(max-width:767px){
+        border-radius: 12px 12px;
+    }
 }
 .radius-right-12 {
     border-radius: 0px 12px 12px 0px;
+    @media(max-width:767px){
+        border-radius: 12px 12px;
+    }
 }
 .pr-27 {
     padding-right: 27px;
@@ -267,6 +280,11 @@ body {
         border: 1px solid var(--primary);
         transition: all 0.3s linear;
     }
+    @media(max-width:575px){
+        padding: 8px 20px !important;
+        font-size: 14px !important;
+        border-radius: 5px;
+    }
 }
 .secondary-btn {
     color: var(--white);
@@ -276,8 +294,13 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 32px;
+    &:hover {
+        color: var(--dark);
+        background: var(--white);
+        transition: all 0.3s linear;
+    }
     @media(max-width: 575px){
-        padding: 10px 20px;
+        padding: 8px 15px;
         font-size: 15px;
     }
 }
@@ -302,6 +325,9 @@ body {
             }
             .nav-link {
                 color: var(--white);
+                @media(max-width: 5757px){
+                    font-size: 14px;
+                }
             }
         }
         .navbar-nav {
@@ -410,6 +436,9 @@ body {
         @media(max-width:991px){
         padding-bottom: 30px;
         }
+        @media(max-width:575px){
+        padding-bottom: 10px;
+        }
     }
 }
 
@@ -427,9 +456,8 @@ body {
             width: 100%;
         }
     }
-    @media (max-width: 757px) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    @media (max-width: 575px) {
+    padding: 60px 0;
 }
 }
 
@@ -438,8 +466,7 @@ body {
     background: linear-gradient(180deg, rgba(255,107,31,0) 0%, rgba(255,107,31,0.2) 100%);
     padding-bottom: 202px;
     @media(max-width:575px){
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding: 60px 0;
     }
 }
 
@@ -448,6 +475,9 @@ body {
     padding: 150px 0;
     @media(max-width:767px) {
         padding: 100px 0;
+    }
+    @media(max-width:575px) {
+        padding: 60px 0;
     }
     .review-content{
         padding-bottom: 76px;
@@ -475,7 +505,9 @@ body {
         @media(max-width: 767px){
             margin-top: 30px;
         }
-        
+        @media(max-width: 575px){
+            margin-top: 0;
+        }
     }
 
 }
@@ -486,6 +518,9 @@ body {
     padding: 160px 0 102px 0;
     @media(max-width:991px) {
         padding: 80px 0;
+    }
+    @media(max-width:575px){
+        padding: 60px 0 0 0;
     }
     .review-content {
         .top {
@@ -639,6 +674,10 @@ body {
                 @media(max-width:767px){
                     margin-top: 0;
                 }
+                @media(max-width:575px){
+                    padding: 12px 15px;
+                    border-radius: 5PX;
+                }
             }
         }
     }
@@ -655,7 +694,7 @@ body {
         }
     }
     @media(max-width:575px){
-        padding: 50px 0;
+        padding: 60px 0;
     }
 }
 
@@ -668,6 +707,12 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    @media(max-width:767px){
+        padding: 80px 0;
+    }
+    @media(max-width:575px){
+        padding: 60px 0;
+    }
     .email {
         padding: 19px 25px 23px 25px;
         max-width: 531px;
@@ -681,10 +726,11 @@ body {
         line-height: 24px;
         border-radius: 10px;
         border: 1px solid rgba(0, 0, 0, 0.20);
-        @media(max-width:575px){
-            padding: 19px 25px;
-            font-size: 17px;
+        @media(max-width:767px){
+            padding: 10px 25px;
+            font-size: 16px;
         }
+        
     }
     .subscribe-btn {
         padding: 20px 58px 22px 56px;
@@ -696,9 +742,10 @@ body {
         font-style: normal;
         font-weight: 600;
         line-height: 24px;
-        @media(max-width:575px){
-            padding: 17px 50px;
+        @media(max-width:767px){
+            padding: 12px 40px;
             font-size: 16px;
+            border-radius: 8px;
         }
     }
 }

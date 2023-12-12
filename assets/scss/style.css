@@ -146,6 +146,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .fs-5 {
+    font-size: 17px !important;
+    line-height: 27px !important;
+  }
+}
 @media (max-width: 575px) {
   .fs-5 {
     font-size: 16px !important;
@@ -256,6 +262,11 @@ body {
   box-shadow: 100px 0px 70px -40px rgba(0, 0, 0, 0.08);
   position: relative;
 }
+@media (max-width: 767px) {
+  .shadow-right {
+    box-shadow: none;
+  }
+}
 
 .radius-10 {
   border-radius: 10px;
@@ -264,9 +275,19 @@ body {
 .radius-left-12 {
   border-radius: 12px 0px 0px 12px;
 }
+@media (max-width: 767px) {
+  .radius-left-12 {
+    border-radius: 12px 12px;
+  }
+}
 
 .radius-right-12 {
   border-radius: 0px 12px 12px 0px;
+}
+@media (max-width: 767px) {
+  .radius-right-12 {
+    border-radius: 12px 12px;
+  }
 }
 
 .pr-27 {
@@ -309,6 +330,13 @@ body {
   border: 1px solid var(--primary);
   transition: all 0.3s linear;
 }
+@media (max-width: 575px) {
+  .header-btn {
+    padding: 8px 20px !important;
+    font-size: 14px !important;
+    border-radius: 5px;
+  }
+}
 
 .secondary-btn {
   color: var(--white);
@@ -319,9 +347,14 @@ body {
   font-weight: 700;
   line-height: 32px;
 }
+.secondary-btn:hover {
+  color: var(--dark);
+  background: var(--white);
+  transition: all 0.3s linear;
+}
 @media (max-width: 575px) {
   .secondary-btn {
-    padding: 10px 20px;
+    padding: 8px 15px;
     font-size: 15px;
   }
 }
@@ -344,6 +377,11 @@ body {
   }
   .header .navbar .nav-link {
     color: var(--white);
+  }
+}
+@media (max-width: 991px) and (max-width: 5757px) {
+  .header .navbar .nav-link {
+    font-size: 14px;
   }
 }
 .header .navbar .navbar-nav {
@@ -473,6 +511,11 @@ body {
     padding-bottom: 30px;
   }
 }
+@media (max-width: 575px) {
+  .management .management-card {
+    padding-bottom: 10px;
+  }
+}
 
 .ranking {
   padding-top: 150px;
@@ -489,10 +532,9 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 757px) {
+@media (max-width: 575px) {
   .ranking {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 60px 0;
   }
 }
 
@@ -502,8 +544,7 @@ body {
 }
 @media (max-width: 575px) {
   .needs {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 60px 0;
   }
 }
 
@@ -513,6 +554,11 @@ body {
 @media (max-width: 767px) {
   .review {
     padding: 100px 0;
+  }
+}
+@media (max-width: 575px) {
+  .review {
+    padding: 60px 0;
   }
 }
 .review .review-content {
@@ -552,6 +598,11 @@ body {
     margin-top: 30px;
   }
 }
+@media (max-width: 575px) {
+  .review .resume-btn {
+    margin-top: 0;
+  }
+}
 
 .package {
   background: linear-gradient(180deg, rgba(255, 107, 31, 0.2) 0%, rgba(255, 107, 31, 0) 100%);
@@ -560,6 +611,11 @@ body {
 @media (max-width: 991px) {
   .package {
     padding: 80px 0;
+  }
+}
+@media (max-width: 575px) {
+  .package {
+    padding: 60px 0 0 0;
   }
 }
 .package .review-content .top {
@@ -706,6 +762,12 @@ body {
     margin-top: 0;
   }
 }
+@media (max-width: 575px) {
+  .package .review-content .package-container .subscription-btn {
+    padding: 12px 15px;
+    border-radius: 5PX;
+  }
+}
 
 .partner {
   padding: 98px 0;
@@ -719,7 +781,7 @@ body {
 }
 @media (max-width: 575px) {
   .partner {
-    padding: 50px 0;
+    padding: 60px 0;
   }
 }
 
@@ -731,6 +793,16 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
+}
+@media (max-width: 767px) {
+  .subscribe {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 575px) {
+  .subscribe {
+    padding: 60px 0;
+  }
 }
 .subscribe .email {
   padding: 19px 25px 23px 25px;
@@ -746,10 +818,10 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .subscribe .email {
-    padding: 19px 25px;
-    font-size: 17px;
+    padding: 10px 25px;
+    font-size: 16px;
   }
 }
 .subscribe .subscribe-btn {
@@ -763,10 +835,11 @@ body {
   font-weight: 600;
   line-height: 24px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .subscribe .subscribe-btn {
-    padding: 17px 50px;
+    padding: 12px 40px;
     font-size: 16px;
+    border-radius: 8px;
   }
 }
 
