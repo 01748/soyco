@@ -346,6 +346,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
+  border: 1px solid var(--dark);
 }
 .secondary-btn:hover {
   color: var(--dark);
@@ -370,7 +371,6 @@ body {
   .header .navbar .navbar-collapse {
     background-color: var(--title);
     border-radius: 0px 0px 10px 10px;
-    padding: 20px;
   }
   .header .navbar .navbar-toggler:focus {
     box-shadow: none;
@@ -455,6 +455,7 @@ body {
 }
 @media (max-width: 575px) {
   .banner .search .site-submit {
+    height: 53px;
     padding: 10px 14px 10px 15px;
     font-size: 15px;
   }
@@ -503,6 +504,11 @@ body {
   }
 }
 
+@media (max-width: 575px) {
+  .management {
+    padding: 0 30px;
+  }
+}
 .management .management-card {
   padding-bottom: 50px;
 }
@@ -513,7 +519,7 @@ body {
 }
 @media (max-width: 575px) {
   .management .management-card {
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
 }
 
@@ -534,7 +540,7 @@ body {
 }
 @media (max-width: 575px) {
   .ranking {
-    padding: 60px 0;
+    padding: 60px 30px;
   }
 }
 
@@ -544,7 +550,7 @@ body {
 }
 @media (max-width: 575px) {
   .needs {
-    padding: 60px 0;
+    padding: 60px 30px;
   }
 }
 
