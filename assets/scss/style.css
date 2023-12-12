@@ -221,6 +221,12 @@ body {
     line-height: 40px;
   }
 }
+@media (max-width: 575px) {
+  .fs-56 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
 
 .fw-normal {
   font-weight: 400;
@@ -313,6 +319,12 @@ body {
   font-weight: 700;
   line-height: 32px;
 }
+@media (max-width: 575px) {
+  .secondary-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
 
 /* helper , base classes  - END*/
 .header {
@@ -386,6 +398,11 @@ body {
     padding-top: 25px;
   }
 }
+@media (max-width: 575px) {
+  .banner .search {
+    padding-top: 15px;
+  }
+}
 .banner .search .site-submit {
   padding: 14px 14px 14px 15px;
   background: var(--white);
@@ -397,6 +414,12 @@ body {
   font-size: 18px;
   line-height: 32px;
   font-weight: 500;
+}
+@media (max-width: 575px) {
+  .banner .search .site-submit {
+    padding: 10px 14px 10px 15px;
+    font-size: 15px;
+  }
 }
 .banner .hero-img {
   margin-right: -100px;
@@ -431,6 +454,13 @@ body {
   .banner .hero-img {
     padding-bottom: 25px;
     max-width: 350px;
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .banner .hero-img {
+    padding-bottom: 25px;
+    max-width: 250px;
     width: 100%;
   }
 }
