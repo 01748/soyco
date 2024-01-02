@@ -1,1 +1,1 @@
-https://01748.github.io/soyco
+https://mahdi-developer.github.io/soyco
